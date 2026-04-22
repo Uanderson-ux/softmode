@@ -98,9 +98,21 @@ img, video {
 }
 
 .btn-large {
-    font-size: 1.25rem;
-    padding: 1.25rem 3rem;
-    width: 100%;
+    font-size: 1.5rem;
+    padding: 1.5rem 4rem;
+    width: auto;
+    min-width: 300px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+}
+
+.cta-subtext {
+    display: block;
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    font-weight: 400;
 }
 
 /* Hero Section */
@@ -108,28 +120,34 @@ img, video {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: 8rem 0 4rem;
+    padding: 10rem 0 6rem;
     position: relative;
     overflow: hidden;
+    text-align: center;
 }
 
 .hero .container {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 4rem;
-    flex-wrap: wrap;
+    max-width: 1000px;
 }
 
 .hero-content {
-    flex: 1;
-    min-width: 300px;
+    max-width: 800px;
+    margin-bottom: 3rem;
     z-index: 2;
 }
 
 .hero-video {
-    flex: 1;
-    min-width: 300px;
+    width: 100%;
+    max-width: 900px;
+    margin-top: 3rem;
     z-index: 1;
+    border-radius: 2rem;
+    overflow: hidden;
+    box-shadow: 0 0 80px rgba(168, 85, 247, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .hero::before {

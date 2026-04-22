@@ -113,6 +113,25 @@ img, video {
     overflow: hidden;
 }
 
+.hero .container {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.hero-content {
+    flex: 1;
+    min-width: 300px;
+    z-index: 2;
+}
+
+.hero-video {
+    flex: 1;
+    min-width: 300px;
+    z-index: 1;
+}
+
 .hero::before {
     content: '';
     position: absolute;

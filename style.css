@@ -442,9 +442,13 @@ footer {
 
 /* Responsive */
 @media (max-width: 992px) {
-    .hero {
-        flex-direction: column;
+    .hero .container {
+        flex-direction: column-reverse;
         text-align: center;
+        gap: 3rem;
+    }
+    
+    .hero {
         padding-top: 6rem;
     }
     
@@ -452,7 +456,7 @@ footer {
     
     .hero p { margin: 0 auto 2.5rem; }
     
-    .hero-mockup { margin-top: 3rem; }
+    .hero-video { margin-bottom: 2rem; width: 100%; }
     
     .solution-grid {
         grid-template-columns: 1fr;
